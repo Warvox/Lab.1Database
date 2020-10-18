@@ -56,6 +56,8 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.bindingNavigator2 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem2 = new System.Windows.Forms.ToolStripButton();
+            this.tbPredmetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.databaseLab1DataSet = new Lab._1Database.DatabaseLab1DataSet();
             this.bindingNavigatorCountItem2 = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem2 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem2 = new System.Windows.Forms.ToolStripButton();
@@ -67,8 +69,6 @@
             this.bindingNavigatorMoveLastItem2 = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.idPNumTextBox = new System.Windows.Forms.TextBox();
-            this.tbPredmetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.databaseLab1DataSet = new Lab._1Database.DatabaseLab1DataSet();
             this.idTnum_FKTextBox = new System.Windows.Forms.TextBox();
             this.cPNameTextBox = new System.Windows.Forms.TextBox();
             this.hoursTextBox = new System.Windows.Forms.TextBox();
@@ -159,6 +159,12 @@
             this.tbTeachersTableAdapter = new Lab._1Database.DatabaseLab1DataSetTableAdapters.TbTeachersTableAdapter();
             this.tbPredmetTableAdapter = new Lab._1Database.DatabaseLab1DataSetTableAdapters.TbPredmetTableAdapter();
             this.tbUspTableAdapter = new Lab._1Database.DatabaseLab1DataSetTableAdapters.TbUspTableAdapter();
+            this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             idsNumLabel = new System.Windows.Forms.Label();
             vcFamLabel = new System.Windows.Forms.Label();
             vcImaLabel = new System.Windows.Forms.Label();
@@ -201,6 +207,10 @@
             this.tbStudentsBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbStudentsDataGridView)).BeginInit();
             this.tabControl1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // idsNumLabel
@@ -208,103 +218,99 @@
             idsNumLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             idsNumLabel.AutoSize = true;
-            idsNumLabel.Location = new System.Drawing.Point(550, 35);
+            idsNumLabel.Location = new System.Drawing.Point(4, 22);
             idsNumLabel.Name = "idsNumLabel";
-            idsNumLabel.Size = new System.Drawing.Size(48, 13);
+            idsNumLabel.Size = new System.Drawing.Size(88, 13);
             idsNumLabel.TabIndex = 2;
-            idsNumLabel.Text = "ids Num:";
+            idsNumLabel.Text = "ID Студента(ки):";
             // 
             // vcFamLabel
             // 
             vcFamLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             vcFamLabel.AutoSize = true;
-            vcFamLabel.Location = new System.Drawing.Point(550, 61);
+            vcFamLabel.Location = new System.Drawing.Point(33, 48);
             vcFamLabel.Name = "vcFamLabel";
-            vcFamLabel.Size = new System.Drawing.Size(45, 13);
+            vcFamLabel.Size = new System.Drawing.Size(59, 13);
             vcFamLabel.TabIndex = 4;
-            vcFamLabel.Text = "vc Fam:";
+            vcFamLabel.Text = "Фамилия:";
             // 
             // vcImaLabel
             // 
             vcImaLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             vcImaLabel.AutoSize = true;
-            vcImaLabel.Location = new System.Drawing.Point(550, 87);
+            vcImaLabel.Location = new System.Drawing.Point(60, 74);
             vcImaLabel.Name = "vcImaLabel";
-            vcImaLabel.Size = new System.Drawing.Size(42, 13);
+            vcImaLabel.Size = new System.Drawing.Size(32, 13);
             vcImaLabel.TabIndex = 6;
-            vcImaLabel.Text = "vc Ima:";
+            vcImaLabel.Text = "Имя:";
             // 
             // vcOtchLabel
             // 
             vcOtchLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             vcOtchLabel.AutoSize = true;
-            vcOtchLabel.Location = new System.Drawing.Point(550, 113);
+            vcOtchLabel.Location = new System.Drawing.Point(35, 100);
             vcOtchLabel.Name = "vcOtchLabel";
-            vcOtchLabel.Size = new System.Drawing.Size(48, 13);
+            vcOtchLabel.Size = new System.Drawing.Size(57, 13);
             vcOtchLabel.TabIndex = 8;
-            vcOtchLabel.Text = "vc Otch:";
+            vcOtchLabel.Text = "Отчество:";
             // 
             // stipLabel
             // 
             stipLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             stipLabel.AutoSize = true;
-            stipLabel.Location = new System.Drawing.Point(550, 139);
+            stipLabel.Location = new System.Drawing.Point(28, 126);
             stipLabel.Name = "stipLabel";
-            stipLabel.Size = new System.Drawing.Size(26, 13);
+            stipLabel.Size = new System.Drawing.Size(64, 13);
             stipLabel.TabIndex = 10;
-            stipLabel.Text = "stip:";
+            stipLabel.Text = "Стипендия:";
             // 
             // idTnumLabel
             // 
-            idTnumLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            idTnumLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             idTnumLabel.AutoSize = true;
-            idTnumLabel.Location = new System.Drawing.Point(541, 31);
+            idTnumLabel.Location = new System.Drawing.Point(6, 26);
             idTnumLabel.Name = "idTnumLabel";
-            idTnumLabel.Size = new System.Drawing.Size(48, 13);
+            idTnumLabel.Size = new System.Drawing.Size(101, 13);
             idTnumLabel.TabIndex = 2;
-            idTnumLabel.Text = "id Tnum:";
+            idTnumLabel.Text = "ID преподавателя:";
             // 
             // cTFamLabel
             // 
-            cTFamLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            cTFamLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             cTFamLabel.AutoSize = true;
-            cTFamLabel.Location = new System.Drawing.Point(541, 57);
+            cTFamLabel.Location = new System.Drawing.Point(48, 52);
             cTFamLabel.Name = "cTFamLabel";
-            cTFamLabel.Size = new System.Drawing.Size(46, 13);
+            cTFamLabel.Size = new System.Drawing.Size(59, 13);
             cTFamLabel.TabIndex = 4;
-            cTFamLabel.Text = "c TFam:";
+            cTFamLabel.Text = "Фамилия:";
             // 
             // cTImaLabel
             // 
-            cTImaLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            cTImaLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             cTImaLabel.AutoSize = true;
-            cTImaLabel.Location = new System.Drawing.Point(541, 83);
+            cTImaLabel.Location = new System.Drawing.Point(75, 78);
             cTImaLabel.Name = "cTImaLabel";
-            cTImaLabel.Size = new System.Drawing.Size(43, 13);
+            cTImaLabel.Size = new System.Drawing.Size(32, 13);
             cTImaLabel.TabIndex = 6;
-            cTImaLabel.Text = "c TIma:";
+            cTImaLabel.Text = "Имя:";
             // 
             // cTOtchLabel
             // 
-            cTOtchLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            cTOtchLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             cTOtchLabel.AutoSize = true;
-            cTOtchLabel.Location = new System.Drawing.Point(541, 109);
+            cTOtchLabel.Location = new System.Drawing.Point(50, 104);
             cTOtchLabel.Name = "cTOtchLabel";
-            cTOtchLabel.Size = new System.Drawing.Size(49, 13);
+            cTOtchLabel.Size = new System.Drawing.Size(57, 13);
             cTOtchLabel.TabIndex = 8;
-            cTOtchLabel.Text = "c TOtch:";
+            cTOtchLabel.Text = "Отчество:";
             // 
             // idPNumLabel
             // 
@@ -312,11 +318,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             idPNumLabel.AutoSize = true;
-            idPNumLabel.Location = new System.Drawing.Point(555, 37);
+            idPNumLabel.Location = new System.Drawing.Point(53, 25);
             idPNumLabel.Name = "idPNumLabel";
-            idPNumLabel.Size = new System.Drawing.Size(50, 13);
+            idPNumLabel.Size = new System.Drawing.Size(73, 13);
             idPNumLabel.TabIndex = 2;
-            idPNumLabel.Text = "id PNum:";
+            idPNumLabel.Text = "ID предмета:";
             // 
             // idTnum_FKLabel
             // 
@@ -324,11 +330,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             idTnum_FKLabel.AutoSize = true;
-            idTnum_FKLabel.Location = new System.Drawing.Point(555, 63);
+            idTnum_FKLabel.Location = new System.Drawing.Point(6, 51);
             idTnum_FKLabel.Name = "idTnum_FKLabel";
-            idTnum_FKLabel.Size = new System.Drawing.Size(64, 13);
+            idTnum_FKLabel.Size = new System.Drawing.Size(120, 13);
             idTnum_FKLabel.TabIndex = 4;
-            idTnum_FKLabel.Text = "id Tnum FK:";
+            idTnum_FKLabel.Text = "ID преподавателя(FK):";
             // 
             // cPNameLabel
             // 
@@ -336,11 +342,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             cPNameLabel.AutoSize = true;
-            cPNameLabel.Location = new System.Drawing.Point(555, 89);
+            cPNameLabel.Location = new System.Drawing.Point(14, 77);
             cPNameLabel.Name = "cPNameLabel";
-            cPNameLabel.Size = new System.Drawing.Size(54, 13);
+            cPNameLabel.Size = new System.Drawing.Size(112, 13);
             cPNameLabel.TabIndex = 6;
-            cPNameLabel.Text = "c PName:";
+            cPNameLabel.Text = "Название предмета:";
             // 
             // hoursLabel
             // 
@@ -348,11 +354,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             hoursLabel.AutoSize = true;
-            hoursLabel.Location = new System.Drawing.Point(555, 115);
+            hoursLabel.Location = new System.Drawing.Point(16, 103);
             hoursLabel.Name = "hoursLabel";
-            hoursLabel.Size = new System.Drawing.Size(38, 13);
+            hoursLabel.Size = new System.Drawing.Size(110, 13);
             hoursLabel.TabIndex = 8;
-            hoursLabel.Text = "Hours:";
+            hoursLabel.Text = "Академический час:";
             // 
             // coursLabel
             // 
@@ -360,11 +366,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             coursLabel.AutoSize = true;
-            coursLabel.Location = new System.Drawing.Point(555, 141);
+            coursLabel.Location = new System.Drawing.Point(92, 129);
             coursLabel.Name = "coursLabel";
-            coursLabel.Size = new System.Drawing.Size(37, 13);
+            coursLabel.Size = new System.Drawing.Size(34, 13);
             coursLabel.TabIndex = 10;
-            coursLabel.Text = "Cours:";
+            coursLabel.Text = "Курс:";
             // 
             // idUnumLabel
             // 
@@ -372,11 +378,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             idUnumLabel.AutoSize = true;
-            idUnumLabel.Location = new System.Drawing.Point(555, 37);
+            idUnumLabel.Location = new System.Drawing.Point(29, 25);
             idUnumLabel.Name = "idUnumLabel";
-            idUnumLabel.Size = new System.Drawing.Size(49, 13);
+            idUnumLabel.Size = new System.Drawing.Size(96, 13);
             idUnumLabel.TabIndex = 2;
-            idUnumLabel.Text = "id Unum:";
+            idUnumLabel.Text = "ID успеваемости:";
             // 
             // idsNum_FKLabel
             // 
@@ -384,11 +390,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             idsNum_FKLabel.AutoSize = true;
-            idsNum_FKLabel.Location = new System.Drawing.Point(555, 63);
+            idsNum_FKLabel.Location = new System.Drawing.Point(19, 51);
             idsNum_FKLabel.Name = "idsNum_FKLabel";
-            idsNum_FKLabel.Size = new System.Drawing.Size(64, 13);
+            idsNum_FKLabel.Size = new System.Drawing.Size(106, 13);
             idsNum_FKLabel.TabIndex = 4;
-            idsNum_FKLabel.Text = "ids Num FK:";
+            idsNum_FKLabel.Text = "ID студента(ки)(FK):";
             // 
             // idPNum_FKLabel
             // 
@@ -396,11 +402,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             idPNum_FKLabel.AutoSize = true;
-            idPNum_FKLabel.Location = new System.Drawing.Point(555, 89);
+            idPNum_FKLabel.Location = new System.Drawing.Point(5, 77);
             idPNum_FKLabel.Name = "idPNum_FKLabel";
-            idPNum_FKLabel.Size = new System.Drawing.Size(66, 13);
+            idPNum_FKLabel.Size = new System.Drawing.Size(120, 13);
             idPNum_FKLabel.TabIndex = 6;
-            idPNum_FKLabel.Text = "id PNum FK:";
+            idPNum_FKLabel.Text = "ID преподавателя(FK):";
             // 
             // ocenkaLabel
             // 
@@ -408,11 +414,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             ocenkaLabel.AutoSize = true;
-            ocenkaLabel.Location = new System.Drawing.Point(555, 115);
+            ocenkaLabel.Location = new System.Drawing.Point(77, 103);
             ocenkaLabel.Name = "ocenkaLabel";
             ocenkaLabel.Size = new System.Drawing.Size(48, 13);
             ocenkaLabel.TabIndex = 8;
-            ocenkaLabel.Text = "Ocenka:";
+            ocenkaLabel.Text = "Оценка:";
             // 
             // uDateLabel
             // 
@@ -420,19 +426,20 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             uDateLabel.AutoSize = true;
-            uDateLabel.Location = new System.Drawing.Point(555, 142);
+            uDateLabel.Location = new System.Drawing.Point(50, 132);
             uDateLabel.Name = "uDateLabel";
-            uDateLabel.Size = new System.Drawing.Size(41, 13);
+            uDateLabel.Size = new System.Drawing.Size(75, 13);
             uDateLabel.TabIndex = 10;
-            uDateLabel.Text = "UDate:";
+            uDateLabel.Text = "Дата оценки:";
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.файлToolStripMenuItem});
+            this.файлToolStripMenuItem,
+            this.справкаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(869, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1059, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -460,21 +467,12 @@
             // tabPage3
             // 
             this.tabPage3.AutoScroll = true;
+            this.tabPage3.Controls.Add(this.groupBox3);
             this.tabPage3.Controls.Add(this.bindingNavigator2);
-            this.tabPage3.Controls.Add(idPNumLabel);
-            this.tabPage3.Controls.Add(this.idPNumTextBox);
-            this.tabPage3.Controls.Add(idTnum_FKLabel);
-            this.tabPage3.Controls.Add(this.idTnum_FKTextBox);
-            this.tabPage3.Controls.Add(cPNameLabel);
-            this.tabPage3.Controls.Add(this.cPNameTextBox);
-            this.tabPage3.Controls.Add(hoursLabel);
-            this.tabPage3.Controls.Add(this.hoursTextBox);
-            this.tabPage3.Controls.Add(coursLabel);
-            this.tabPage3.Controls.Add(this.coursTextBox);
             this.tabPage3.Controls.Add(this.tbPredmetDataGridView);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(928, 405);
+            this.tabPage3.Size = new System.Drawing.Size(1051, 409);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Предметы";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -485,6 +483,7 @@
             this.bindingNavigator2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bindingNavigator2.AutoSize = false;
+            this.bindingNavigator2.BindingSource = this.tbPredmetBindingSource;
             this.bindingNavigator2.CountItem = this.bindingNavigatorCountItem2;
             this.bindingNavigator2.DeleteItem = this.bindingNavigatorDeleteItem2;
             this.bindingNavigator2.Dock = System.Windows.Forms.DockStyle.None;
@@ -507,8 +506,8 @@
             this.bindingNavigator2.MovePreviousItem = this.bindingNavigatorMovePreviousItem2;
             this.bindingNavigator2.Name = "bindingNavigator2";
             this.bindingNavigator2.PositionItem = this.bindingNavigatorPositionItem2;
-            this.bindingNavigator2.Size = new System.Drawing.Size(923, 25);
-            this.bindingNavigator2.TabIndex = 12;
+            this.bindingNavigator2.Size = new System.Drawing.Size(1045, 25);
+            this.bindingNavigator2.TabIndex = 1;
             this.bindingNavigator2.Text = "bindingNavigator2";
             // 
             // bindingNavigatorAddNewItem2
@@ -519,6 +518,16 @@
             this.bindingNavigatorAddNewItem2.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem2.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem2.Text = "Добавить";
+            // 
+            // tbPredmetBindingSource
+            // 
+            this.tbPredmetBindingSource.DataMember = "TbPredmet";
+            this.tbPredmetBindingSource.DataSource = this.databaseLab1DataSet;
+            // 
+            // databaseLab1DataSet
+            // 
+            this.databaseLab1DataSet.DataSetName = "DatabaseLab1DataSet";
+            this.databaseLab1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem2
             // 
@@ -602,20 +611,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.idPNumTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbPredmetBindingSource, "idPNum", true));
-            this.idPNumTextBox.Location = new System.Drawing.Point(624, 34);
+            this.idPNumTextBox.Location = new System.Drawing.Point(132, 22);
             this.idPNumTextBox.Name = "idPNumTextBox";
-            this.idPNumTextBox.Size = new System.Drawing.Size(296, 20);
+            this.idPNumTextBox.Size = new System.Drawing.Size(350, 20);
             this.idPNumTextBox.TabIndex = 3;
-            // 
-            // tbPredmetBindingSource
-            // 
-            this.tbPredmetBindingSource.DataMember = "TbPredmet";
-            this.tbPredmetBindingSource.DataSource = this.databaseLab1DataSet;
-            // 
-            // databaseLab1DataSet
-            // 
-            this.databaseLab1DataSet.DataSetName = "DatabaseLab1DataSet";
-            this.databaseLab1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // idTnum_FKTextBox
             // 
@@ -623,9 +622,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.idTnum_FKTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbPredmetBindingSource, "idTnum_FK", true));
-            this.idTnum_FKTextBox.Location = new System.Drawing.Point(624, 60);
+            this.idTnum_FKTextBox.Location = new System.Drawing.Point(132, 48);
             this.idTnum_FKTextBox.Name = "idTnum_FKTextBox";
-            this.idTnum_FKTextBox.Size = new System.Drawing.Size(296, 20);
+            this.idTnum_FKTextBox.Size = new System.Drawing.Size(350, 20);
             this.idTnum_FKTextBox.TabIndex = 5;
             // 
             // cPNameTextBox
@@ -634,9 +633,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cPNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbPredmetBindingSource, "cPName", true));
-            this.cPNameTextBox.Location = new System.Drawing.Point(624, 86);
+            this.cPNameTextBox.Location = new System.Drawing.Point(132, 74);
             this.cPNameTextBox.Name = "cPNameTextBox";
-            this.cPNameTextBox.Size = new System.Drawing.Size(296, 20);
+            this.cPNameTextBox.Size = new System.Drawing.Size(350, 20);
             this.cPNameTextBox.TabIndex = 7;
             // 
             // hoursTextBox
@@ -645,9 +644,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.hoursTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbPredmetBindingSource, "Hours", true));
-            this.hoursTextBox.Location = new System.Drawing.Point(624, 112);
+            this.hoursTextBox.Location = new System.Drawing.Point(132, 100);
             this.hoursTextBox.Name = "hoursTextBox";
-            this.hoursTextBox.Size = new System.Drawing.Size(296, 20);
+            this.hoursTextBox.Size = new System.Drawing.Size(350, 20);
             this.hoursTextBox.TabIndex = 9;
             // 
             // coursTextBox
@@ -656,15 +655,16 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.coursTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbPredmetBindingSource, "Cours", true));
-            this.coursTextBox.Location = new System.Drawing.Point(624, 138);
+            this.coursTextBox.Location = new System.Drawing.Point(132, 126);
             this.coursTextBox.Name = "coursTextBox";
-            this.coursTextBox.Size = new System.Drawing.Size(296, 20);
+            this.coursTextBox.Size = new System.Drawing.Size(350, 20);
             this.coursTextBox.TabIndex = 11;
             // 
             // tbPredmetDataGridView
             // 
-            this.tbPredmetDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.tbPredmetDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbPredmetDataGridView.AutoGenerateColumns = false;
             this.tbPredmetDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tbPredmetDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -674,9 +674,9 @@
             this.hoursDataGridViewTextBoxColumn,
             this.coursDataGridViewTextBoxColumn});
             this.tbPredmetDataGridView.DataSource = this.tbPredmetBindingSource;
-            this.tbPredmetDataGridView.Location = new System.Drawing.Point(0, 31);
+            this.tbPredmetDataGridView.Location = new System.Drawing.Point(3, 31);
             this.tbPredmetDataGridView.Name = "tbPredmetDataGridView";
-            this.tbPredmetDataGridView.Size = new System.Drawing.Size(549, 374);
+            this.tbPredmetDataGridView.Size = new System.Drawing.Size(551, 375);
             this.tbPredmetDataGridView.TabIndex = 0;
             // 
             // idPNumDataGridViewTextBoxColumn
@@ -713,21 +713,12 @@
             // tabPage4
             // 
             this.tabPage4.AutoScroll = true;
-            this.tabPage4.Controls.Add(idUnumLabel);
-            this.tabPage4.Controls.Add(this.idUnumTextBox);
-            this.tabPage4.Controls.Add(idsNum_FKLabel);
-            this.tabPage4.Controls.Add(this.idsNum_FKTextBox);
-            this.tabPage4.Controls.Add(idPNum_FKLabel);
-            this.tabPage4.Controls.Add(this.idPNum_FKTextBox);
-            this.tabPage4.Controls.Add(ocenkaLabel);
-            this.tabPage4.Controls.Add(this.ocenkaTextBox);
-            this.tabPage4.Controls.Add(uDateLabel);
-            this.tabPage4.Controls.Add(this.uDateDateTimePicker);
+            this.tabPage4.Controls.Add(this.groupBox4);
             this.tabPage4.Controls.Add(this.bindingNavigator3);
             this.tabPage4.Controls.Add(this.tbUspDataGridView);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(928, 405);
+            this.tabPage4.Size = new System.Drawing.Size(1051, 409);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Успеваемость";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -738,9 +729,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.idUnumTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbUspBindingSource, "idUnum", true));
-            this.idUnumTextBox.Location = new System.Drawing.Point(627, 34);
+            this.idUnumTextBox.Location = new System.Drawing.Point(131, 22);
             this.idUnumTextBox.Name = "idUnumTextBox";
-            this.idUnumTextBox.Size = new System.Drawing.Size(289, 20);
+            this.idUnumTextBox.Size = new System.Drawing.Size(356, 20);
             this.idUnumTextBox.TabIndex = 3;
             // 
             // tbUspBindingSource
@@ -754,9 +745,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.idsNum_FKTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbUspBindingSource, "idsNum_FK", true));
-            this.idsNum_FKTextBox.Location = new System.Drawing.Point(627, 60);
+            this.idsNum_FKTextBox.Location = new System.Drawing.Point(131, 48);
             this.idsNum_FKTextBox.Name = "idsNum_FKTextBox";
-            this.idsNum_FKTextBox.Size = new System.Drawing.Size(289, 20);
+            this.idsNum_FKTextBox.Size = new System.Drawing.Size(356, 20);
             this.idsNum_FKTextBox.TabIndex = 5;
             // 
             // idPNum_FKTextBox
@@ -765,9 +756,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.idPNum_FKTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbUspBindingSource, "idPNum_FK", true));
-            this.idPNum_FKTextBox.Location = new System.Drawing.Point(627, 86);
+            this.idPNum_FKTextBox.Location = new System.Drawing.Point(131, 74);
             this.idPNum_FKTextBox.Name = "idPNum_FKTextBox";
-            this.idPNum_FKTextBox.Size = new System.Drawing.Size(289, 20);
+            this.idPNum_FKTextBox.Size = new System.Drawing.Size(356, 20);
             this.idPNum_FKTextBox.TabIndex = 7;
             // 
             // ocenkaTextBox
@@ -776,9 +767,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ocenkaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbUspBindingSource, "Ocenka", true));
-            this.ocenkaTextBox.Location = new System.Drawing.Point(627, 112);
+            this.ocenkaTextBox.Location = new System.Drawing.Point(131, 100);
             this.ocenkaTextBox.Name = "ocenkaTextBox";
-            this.ocenkaTextBox.Size = new System.Drawing.Size(289, 20);
+            this.ocenkaTextBox.Size = new System.Drawing.Size(356, 20);
             this.ocenkaTextBox.TabIndex = 9;
             // 
             // uDateDateTimePicker
@@ -787,9 +778,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.uDateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.tbUspBindingSource, "UDate", true));
-            this.uDateDateTimePicker.Location = new System.Drawing.Point(627, 138);
+            this.uDateDateTimePicker.Location = new System.Drawing.Point(131, 126);
             this.uDateDateTimePicker.Name = "uDateDateTimePicker";
-            this.uDateDateTimePicker.Size = new System.Drawing.Size(289, 20);
+            this.uDateDateTimePicker.Size = new System.Drawing.Size(356, 20);
             this.uDateDateTimePicker.TabIndex = 11;
             // 
             // bindingNavigator3
@@ -798,6 +789,7 @@
             this.bindingNavigator3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bindingNavigator3.AutoSize = false;
+            this.bindingNavigator3.BindingSource = this.tbUspBindingSource;
             this.bindingNavigator3.CountItem = this.bindingNavigatorCountItem3;
             this.bindingNavigator3.DeleteItem = this.bindingNavigatorDeleteItem3;
             this.bindingNavigator3.Dock = System.Windows.Forms.DockStyle.None;
@@ -820,7 +812,7 @@
             this.bindingNavigator3.MovePreviousItem = this.bindingNavigatorMovePreviousItem3;
             this.bindingNavigator3.Name = "bindingNavigator3";
             this.bindingNavigator3.PositionItem = this.bindingNavigatorPositionItem3;
-            this.bindingNavigator3.Size = new System.Drawing.Size(923, 25);
+            this.bindingNavigator3.Size = new System.Drawing.Size(1045, 25);
             this.bindingNavigator3.TabIndex = 1;
             this.bindingNavigator3.Text = "bindingNavigator3";
             // 
@@ -924,7 +916,7 @@
             this.tbUspDataGridView.DataSource = this.tbUspBindingSource;
             this.tbUspDataGridView.Location = new System.Drawing.Point(3, 31);
             this.tbUspDataGridView.Name = "tbUspDataGridView";
-            this.tbUspDataGridView.Size = new System.Drawing.Size(546, 371);
+            this.tbUspDataGridView.Size = new System.Drawing.Size(546, 375);
             this.tbUspDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn15
@@ -961,33 +953,25 @@
             // tabPage2
             // 
             this.tabPage2.AutoScroll = true;
-            this.tabPage2.Controls.Add(idTnumLabel);
-            this.tabPage2.Controls.Add(this.idTnumTextBox);
-            this.tabPage2.Controls.Add(cTFamLabel);
-            this.tabPage2.Controls.Add(this.cTFamTextBox);
-            this.tabPage2.Controls.Add(cTImaLabel);
-            this.tabPage2.Controls.Add(this.cTImaTextBox);
-            this.tabPage2.Controls.Add(cTOtchLabel);
-            this.tabPage2.Controls.Add(this.cTOtchTextBox);
+            this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Controls.Add(this.bindingNavigator1);
             this.tabPage2.Controls.Add(this.tbTeachersDataGridView);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(928, 405);
+            this.tabPage2.Size = new System.Drawing.Size(1051, 409);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Преподаватели";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // idTnumTextBox
             // 
-            this.idTnumTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.idTnumTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.idTnumTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbTeachersBindingSource, "idTnum", true));
-            this.idTnumTextBox.Location = new System.Drawing.Point(596, 28);
+            this.idTnumTextBox.Location = new System.Drawing.Point(112, 23);
             this.idTnumTextBox.Name = "idTnumTextBox";
-            this.idTnumTextBox.Size = new System.Drawing.Size(329, 20);
+            this.idTnumTextBox.Size = new System.Drawing.Size(266, 20);
             this.idTnumTextBox.TabIndex = 3;
             // 
             // tbTeachersBindingSource
@@ -997,40 +981,38 @@
             // 
             // cTFamTextBox
             // 
-            this.cTFamTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.cTFamTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cTFamTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbTeachersBindingSource, "cTFam", true));
-            this.cTFamTextBox.Location = new System.Drawing.Point(596, 54);
+            this.cTFamTextBox.Location = new System.Drawing.Point(112, 49);
             this.cTFamTextBox.Name = "cTFamTextBox";
-            this.cTFamTextBox.Size = new System.Drawing.Size(329, 20);
+            this.cTFamTextBox.Size = new System.Drawing.Size(266, 20);
             this.cTFamTextBox.TabIndex = 5;
             // 
             // cTImaTextBox
             // 
-            this.cTImaTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.cTImaTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cTImaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbTeachersBindingSource, "cTIma", true));
-            this.cTImaTextBox.Location = new System.Drawing.Point(596, 80);
+            this.cTImaTextBox.Location = new System.Drawing.Point(112, 75);
             this.cTImaTextBox.Name = "cTImaTextBox";
-            this.cTImaTextBox.Size = new System.Drawing.Size(329, 20);
+            this.cTImaTextBox.Size = new System.Drawing.Size(266, 20);
             this.cTImaTextBox.TabIndex = 7;
             // 
             // cTOtchTextBox
             // 
-            this.cTOtchTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.cTOtchTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cTOtchTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbTeachersBindingSource, "cTOtch", true));
-            this.cTOtchTextBox.Location = new System.Drawing.Point(596, 106);
+            this.cTOtchTextBox.Location = new System.Drawing.Point(112, 101);
             this.cTOtchTextBox.Name = "cTOtchTextBox";
-            this.cTOtchTextBox.Size = new System.Drawing.Size(329, 20);
+            this.cTOtchTextBox.Size = new System.Drawing.Size(266, 20);
             this.cTOtchTextBox.TabIndex = 9;
             // 
             // bindingNavigator1
             // 
             this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem1;
+            this.bindingNavigator1.BindingSource = this.tbTeachersBindingSource;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem1;
             this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem1;
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1052,7 +1034,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem1;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem1;
-            this.bindingNavigator1.Size = new System.Drawing.Size(922, 25);
+            this.bindingNavigator1.Size = new System.Drawing.Size(1045, 25);
             this.bindingNavigator1.TabIndex = 1;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -1143,8 +1125,9 @@
             // 
             // tbTeachersDataGridView
             // 
-            this.tbTeachersDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.tbTeachersDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbTeachersDataGridView.AutoGenerateColumns = false;
             this.tbTeachersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tbTeachersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1155,7 +1138,7 @@
             this.tbTeachersDataGridView.DataSource = this.tbTeachersBindingSource;
             this.tbTeachersDataGridView.Location = new System.Drawing.Point(3, 31);
             this.tbTeachersDataGridView.Name = "tbTeachersDataGridView";
-            this.tbTeachersDataGridView.Size = new System.Drawing.Size(533, 468);
+            this.tbTeachersDataGridView.Size = new System.Drawing.Size(650, 375);
             this.tbTeachersDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn6
@@ -1186,22 +1169,13 @@
             // tabPage1
             // 
             this.tabPage1.AutoScroll = true;
-            this.tabPage1.Controls.Add(idsNumLabel);
-            this.tabPage1.Controls.Add(this.idsNumTextBox);
-            this.tabPage1.Controls.Add(vcFamLabel);
-            this.tabPage1.Controls.Add(this.vcFamTextBox);
-            this.tabPage1.Controls.Add(vcImaLabel);
-            this.tabPage1.Controls.Add(this.vcImaTextBox);
-            this.tabPage1.Controls.Add(vcOtchLabel);
-            this.tabPage1.Controls.Add(this.vcOtchTextBox);
-            this.tabPage1.Controls.Add(stipLabel);
-            this.tabPage1.Controls.Add(this.stipTextBox);
+            this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.tbStudentsBindingNavigator);
             this.tabPage1.Controls.Add(this.tbStudentsDataGridView);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(861, 423);
+            this.tabPage1.Size = new System.Drawing.Size(1051, 409);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Студенты";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1211,7 +1185,7 @@
             this.idsNumTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.idsNumTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbStudentsBindingSource, "idsNum", true));
-            this.idsNumTextBox.Location = new System.Drawing.Point(604, 32);
+            this.idsNumTextBox.Location = new System.Drawing.Point(98, 19);
             this.idsNumTextBox.Name = "idsNumTextBox";
             this.idsNumTextBox.Size = new System.Drawing.Size(251, 20);
             this.idsNumTextBox.TabIndex = 3;
@@ -1226,7 +1200,7 @@
             this.vcFamTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.vcFamTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbStudentsBindingSource, "vcFam", true));
-            this.vcFamTextBox.Location = new System.Drawing.Point(604, 58);
+            this.vcFamTextBox.Location = new System.Drawing.Point(98, 45);
             this.vcFamTextBox.Name = "vcFamTextBox";
             this.vcFamTextBox.Size = new System.Drawing.Size(251, 20);
             this.vcFamTextBox.TabIndex = 5;
@@ -1236,7 +1210,7 @@
             this.vcImaTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.vcImaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbStudentsBindingSource, "vcIma", true));
-            this.vcImaTextBox.Location = new System.Drawing.Point(604, 84);
+            this.vcImaTextBox.Location = new System.Drawing.Point(98, 71);
             this.vcImaTextBox.Name = "vcImaTextBox";
             this.vcImaTextBox.Size = new System.Drawing.Size(251, 20);
             this.vcImaTextBox.TabIndex = 7;
@@ -1246,7 +1220,7 @@
             this.vcOtchTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.vcOtchTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbStudentsBindingSource, "vcOtch", true));
-            this.vcOtchTextBox.Location = new System.Drawing.Point(604, 110);
+            this.vcOtchTextBox.Location = new System.Drawing.Point(98, 97);
             this.vcOtchTextBox.Name = "vcOtchTextBox";
             this.vcOtchTextBox.Size = new System.Drawing.Size(251, 20);
             this.vcOtchTextBox.TabIndex = 9;
@@ -1256,7 +1230,7 @@
             this.stipTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.stipTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbStudentsBindingSource, "stip", true));
-            this.stipTextBox.Location = new System.Drawing.Point(604, 136);
+            this.stipTextBox.Location = new System.Drawing.Point(98, 123);
             this.stipTextBox.Name = "stipTextBox";
             this.stipTextBox.Size = new System.Drawing.Size(251, 20);
             this.stipTextBox.TabIndex = 11;
@@ -1287,8 +1261,8 @@
             this.tbStudentsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.tbStudentsBindingNavigator.Name = "tbStudentsBindingNavigator";
             this.tbStudentsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.tbStudentsBindingNavigator.Size = new System.Drawing.Size(855, 25);
-            this.tbStudentsBindingNavigator.TabIndex = 2;
+            this.tbStudentsBindingNavigator.Size = new System.Drawing.Size(1045, 25);
+            this.tbStudentsBindingNavigator.TabIndex = 1;
             this.tbStudentsBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorAddNewItem
@@ -1400,7 +1374,7 @@
             this.tbStudentsDataGridView.DataSource = this.tbStudentsBindingSource;
             this.tbStudentsDataGridView.Location = new System.Drawing.Point(3, 31);
             this.tbStudentsDataGridView.Name = "tbStudentsDataGridView";
-            this.tbStudentsDataGridView.Size = new System.Drawing.Size(545, 389);
+            this.tbStudentsDataGridView.Size = new System.Drawing.Size(687, 389);
             this.tbStudentsDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
@@ -1444,7 +1418,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 24);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(869, 449);
+            this.tabControl1.Size = new System.Drawing.Size(1059, 435);
             this.tabControl1.TabIndex = 1;
             // 
             // tbStudentsTableAdapter
@@ -1472,11 +1446,103 @@
             // 
             this.tbUspTableAdapter.ClearBeforeFill = true;
             // 
+            // справкаToolStripMenuItem
+            // 
+            this.справкаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.оПрограммеToolStripMenuItem});
+            this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
+            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.справкаToolStripMenuItem.Text = "Справка";
+            // 
+            // оПрограммеToolStripMenuItem
+            // 
+            this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.оПрограммеToolStripMenuItem.Text = "О программе";
+            this.оПрограммеToolStripMenuItem.Click += new System.EventHandler(this.оПрограммеToolStripMenuItem_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.idsNumTextBox);
+            this.groupBox1.Controls.Add(idsNumLabel);
+            this.groupBox1.Controls.Add(this.stipTextBox);
+            this.groupBox1.Controls.Add(stipLabel);
+            this.groupBox1.Controls.Add(vcFamLabel);
+            this.groupBox1.Controls.Add(this.vcOtchTextBox);
+            this.groupBox1.Controls.Add(this.vcFamTextBox);
+            this.groupBox1.Controls.Add(vcOtchLabel);
+            this.groupBox1.Controls.Add(vcImaLabel);
+            this.groupBox1.Controls.Add(this.vcImaTextBox);
+            this.groupBox1.Location = new System.Drawing.Point(693, 31);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(355, 158);
+            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Информация о студенте(ке)";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(cTFamLabel);
+            this.groupBox2.Controls.Add(idTnumLabel);
+            this.groupBox2.Controls.Add(this.cTOtchTextBox);
+            this.groupBox2.Controls.Add(this.idTnumTextBox);
+            this.groupBox2.Controls.Add(cTOtchLabel);
+            this.groupBox2.Controls.Add(this.cTImaTextBox);
+            this.groupBox2.Controls.Add(this.cTFamTextBox);
+            this.groupBox2.Controls.Add(cTImaLabel);
+            this.groupBox2.Location = new System.Drawing.Point(659, 31);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(384, 139);
+            this.groupBox2.TabIndex = 10;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Информация о преподавателе";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Controls.Add(this.idTnum_FKTextBox);
+            this.groupBox3.Controls.Add(this.coursTextBox);
+            this.groupBox3.Controls.Add(idPNumLabel);
+            this.groupBox3.Controls.Add(coursLabel);
+            this.groupBox3.Controls.Add(this.idPNumTextBox);
+            this.groupBox3.Controls.Add(this.hoursTextBox);
+            this.groupBox3.Controls.Add(idTnum_FKLabel);
+            this.groupBox3.Controls.Add(hoursLabel);
+            this.groupBox3.Controls.Add(this.cPNameTextBox);
+            this.groupBox3.Controls.Add(cPNameLabel);
+            this.groupBox3.Location = new System.Drawing.Point(560, 32);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(488, 161);
+            this.groupBox3.TabIndex = 12;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Информация о предметах";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.uDateDateTimePicker);
+            this.groupBox4.Controls.Add(this.idsNum_FKTextBox);
+            this.groupBox4.Controls.Add(idUnumLabel);
+            this.groupBox4.Controls.Add(ocenkaLabel);
+            this.groupBox4.Controls.Add(this.idPNum_FKTextBox);
+            this.groupBox4.Controls.Add(uDateLabel);
+            this.groupBox4.Controls.Add(idsNum_FKLabel);
+            this.groupBox4.Controls.Add(idPNum_FKLabel);
+            this.groupBox4.Controls.Add(this.idUnumTextBox);
+            this.groupBox4.Controls.Add(this.ocenkaTextBox);
+            this.groupBox4.Location = new System.Drawing.Point(555, 31);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(493, 161);
+            this.groupBox4.TabIndex = 12;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Информация об успеваемости";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 473);
+            this.ClientSize = new System.Drawing.Size(1059, 459);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -1486,7 +1552,6 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator2)).EndInit();
             this.bindingNavigator2.ResumeLayout(false);
             this.bindingNavigator2.PerformLayout();
@@ -1494,7 +1559,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.databaseLab1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbPredmetDataGridView)).EndInit();
             this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbUspBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator3)).EndInit();
             this.bindingNavigator3.ResumeLayout(false);
@@ -1515,6 +1579,14 @@
             this.tbStudentsBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbStudentsDataGridView)).EndInit();
             this.tabControl1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1632,6 +1704,12 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem3;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem3;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator11;
+        private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
 
