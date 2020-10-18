@@ -208,7 +208,7 @@
             idsNumLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             idsNumLabel.AutoSize = true;
-            idsNumLabel.Location = new System.Drawing.Point(621, 35);
+            idsNumLabel.Location = new System.Drawing.Point(550, 35);
             idsNumLabel.Name = "idsNumLabel";
             idsNumLabel.Size = new System.Drawing.Size(48, 13);
             idsNumLabel.TabIndex = 2;
@@ -219,7 +219,7 @@
             vcFamLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             vcFamLabel.AutoSize = true;
-            vcFamLabel.Location = new System.Drawing.Point(621, 61);
+            vcFamLabel.Location = new System.Drawing.Point(550, 61);
             vcFamLabel.Name = "vcFamLabel";
             vcFamLabel.Size = new System.Drawing.Size(45, 13);
             vcFamLabel.TabIndex = 4;
@@ -230,7 +230,7 @@
             vcImaLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             vcImaLabel.AutoSize = true;
-            vcImaLabel.Location = new System.Drawing.Point(621, 87);
+            vcImaLabel.Location = new System.Drawing.Point(550, 87);
             vcImaLabel.Name = "vcImaLabel";
             vcImaLabel.Size = new System.Drawing.Size(42, 13);
             vcImaLabel.TabIndex = 6;
@@ -241,7 +241,7 @@
             vcOtchLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             vcOtchLabel.AutoSize = true;
-            vcOtchLabel.Location = new System.Drawing.Point(621, 113);
+            vcOtchLabel.Location = new System.Drawing.Point(550, 113);
             vcOtchLabel.Name = "vcOtchLabel";
             vcOtchLabel.Size = new System.Drawing.Size(48, 13);
             vcOtchLabel.TabIndex = 8;
@@ -252,7 +252,7 @@
             stipLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             stipLabel.AutoSize = true;
-            stipLabel.Location = new System.Drawing.Point(621, 139);
+            stipLabel.Location = new System.Drawing.Point(550, 139);
             stipLabel.Name = "stipLabel";
             stipLabel.Size = new System.Drawing.Size(26, 13);
             stipLabel.TabIndex = 10;
@@ -432,7 +432,7 @@
             this.файлToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(936, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(869, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -448,13 +448,13 @@
             // обновитьToolStripMenuItem
             // 
             this.обновитьToolStripMenuItem.Name = "обновитьToolStripMenuItem";
-            this.обновитьToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.обновитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.обновитьToolStripMenuItem.Text = "Обновить";
             // 
             // сохранитьToolStripMenuItem
             // 
             this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
-            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.сохранитьToolStripMenuItem.Text = "Сохранить";
             // 
             // tabPage3
@@ -1201,7 +1201,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(928, 405);
+            this.tabPage1.Size = new System.Drawing.Size(861, 423);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Студенты";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1211,9 +1211,9 @@
             this.idsNumTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.idsNumTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbStudentsBindingSource, "idsNum", true));
-            this.idsNumTextBox.Location = new System.Drawing.Point(675, 32);
+            this.idsNumTextBox.Location = new System.Drawing.Point(604, 32);
             this.idsNumTextBox.Name = "idsNumTextBox";
-            this.idsNumTextBox.Size = new System.Drawing.Size(164, 20);
+            this.idsNumTextBox.Size = new System.Drawing.Size(251, 20);
             this.idsNumTextBox.TabIndex = 3;
             // 
             // tbStudentsBindingSource
@@ -1226,9 +1226,9 @@
             this.vcFamTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.vcFamTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbStudentsBindingSource, "vcFam", true));
-            this.vcFamTextBox.Location = new System.Drawing.Point(675, 58);
+            this.vcFamTextBox.Location = new System.Drawing.Point(604, 58);
             this.vcFamTextBox.Name = "vcFamTextBox";
-            this.vcFamTextBox.Size = new System.Drawing.Size(164, 20);
+            this.vcFamTextBox.Size = new System.Drawing.Size(251, 20);
             this.vcFamTextBox.TabIndex = 5;
             // 
             // vcImaTextBox
@@ -1236,9 +1236,9 @@
             this.vcImaTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.vcImaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbStudentsBindingSource, "vcIma", true));
-            this.vcImaTextBox.Location = new System.Drawing.Point(675, 84);
+            this.vcImaTextBox.Location = new System.Drawing.Point(604, 84);
             this.vcImaTextBox.Name = "vcImaTextBox";
-            this.vcImaTextBox.Size = new System.Drawing.Size(164, 20);
+            this.vcImaTextBox.Size = new System.Drawing.Size(251, 20);
             this.vcImaTextBox.TabIndex = 7;
             // 
             // vcOtchTextBox
@@ -1246,9 +1246,9 @@
             this.vcOtchTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.vcOtchTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbStudentsBindingSource, "vcOtch", true));
-            this.vcOtchTextBox.Location = new System.Drawing.Point(675, 110);
+            this.vcOtchTextBox.Location = new System.Drawing.Point(604, 110);
             this.vcOtchTextBox.Name = "vcOtchTextBox";
-            this.vcOtchTextBox.Size = new System.Drawing.Size(164, 20);
+            this.vcOtchTextBox.Size = new System.Drawing.Size(251, 20);
             this.vcOtchTextBox.TabIndex = 9;
             // 
             // stipTextBox
@@ -1256,9 +1256,9 @@
             this.stipTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.stipTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tbStudentsBindingSource, "stip", true));
-            this.stipTextBox.Location = new System.Drawing.Point(675, 136);
+            this.stipTextBox.Location = new System.Drawing.Point(604, 136);
             this.stipTextBox.Name = "stipTextBox";
-            this.stipTextBox.Size = new System.Drawing.Size(164, 20);
+            this.stipTextBox.Size = new System.Drawing.Size(251, 20);
             this.stipTextBox.TabIndex = 11;
             // 
             // tbStudentsBindingNavigator
@@ -1287,7 +1287,7 @@
             this.tbStudentsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.tbStudentsBindingNavigator.Name = "tbStudentsBindingNavigator";
             this.tbStudentsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.tbStudentsBindingNavigator.Size = new System.Drawing.Size(922, 25);
+            this.tbStudentsBindingNavigator.Size = new System.Drawing.Size(855, 25);
             this.tbStudentsBindingNavigator.TabIndex = 2;
             this.tbStudentsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -1400,7 +1400,7 @@
             this.tbStudentsDataGridView.DataSource = this.tbStudentsBindingSource;
             this.tbStudentsDataGridView.Location = new System.Drawing.Point(3, 31);
             this.tbStudentsDataGridView.Name = "tbStudentsDataGridView";
-            this.tbStudentsDataGridView.Size = new System.Drawing.Size(612, 281);
+            this.tbStudentsDataGridView.Size = new System.Drawing.Size(545, 389);
             this.tbStudentsDataGridView.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
@@ -1444,7 +1444,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 24);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(936, 431);
+            this.tabControl1.Size = new System.Drawing.Size(869, 449);
             this.tabControl1.TabIndex = 1;
             // 
             // tbStudentsTableAdapter
@@ -1476,7 +1476,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(936, 455);
+            this.ClientSize = new System.Drawing.Size(869, 473);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
